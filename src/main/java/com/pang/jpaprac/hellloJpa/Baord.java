@@ -6,7 +6,7 @@ import javax.persistence.Id;
 @Entity
 public class Baord {
 
-    @Id(Iden)
+    @Id
     private Long id;
     private String name;
 }

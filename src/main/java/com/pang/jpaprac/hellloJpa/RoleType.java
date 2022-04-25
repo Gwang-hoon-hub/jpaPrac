@@ -1,5 +1,5 @@
 package com.pang.jpaprac.hellloJpa;
 
-//public class RoleType {
-//    VIP, GOLD, SILVER;
-//}
+public class RoleType {
+    VIP, GOLD, SILVER;
+}

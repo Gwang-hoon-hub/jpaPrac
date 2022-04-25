@@ -1,0 +1,29 @@
+spring:
+  h2:
+    port: 8080
+    console:
+      enabled: true  # H2 ? ??? ?????? ??
+      path: /h2-console  # ??? ??
+
+  datasource:
+    driver-class-name: org.h2.Driver  #h2 ???? ??
+    url: jdbc:h2:~/test  #?? URL
+    username: sa
+    password:
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        use_sql_comments: true
+
+#sql?? ? ? ?? ?? ????? ????
+logging:
+  level:
+    org:
+      hibernate:
+        type:
+          descriptor:
+            sql: trace
