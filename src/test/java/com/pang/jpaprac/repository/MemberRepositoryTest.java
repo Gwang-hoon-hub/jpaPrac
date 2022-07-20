@@ -1,7 +1,6 @@
 package com.pang.jpaprac.repository;
 
-import com.pang.jpaprac.entity.Member;
-import org.assertj.core.api.Assertions;
+import com.pang.jpaprac.domain.Member;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +8,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.transaction.annotation.Transactional;
 
 import static org.assertj.core.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 class MemberRepositoryTest {
@@ -33,7 +31,8 @@ class MemberRepositoryTest {
         // then
         assertThat(findMember.getId()).isEqualTo(saveId);
         assertThat(findMember.getUsername()).isEqualTo(member.getUsername());
-
     }
+
+
 
 }

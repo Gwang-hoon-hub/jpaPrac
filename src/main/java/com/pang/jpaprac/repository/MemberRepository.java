@@ -1,6 +1,6 @@
 package com.pang.jpaprac.repository;
 
-import com.pang.jpaprac.entity.Member;
+import com.pang.jpaprac.domain.Member;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
