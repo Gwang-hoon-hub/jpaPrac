@@ -1,5 +1,6 @@
 package com.pang.jpaprac.domain;
 
+import com.pang.jpaprac.domain.item.Item;
 import lombok.Getter;
 import lombok.Setter;
 
